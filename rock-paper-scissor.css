@@ -1,0 +1,76 @@
+    body {
+        background-color: rgb(25, 25, 25);
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .container{
+        margin: auto;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box3{
+        /* border: 2px solid wheat; */
+        text-align: center;
+    }
+    .title {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .move-icon {
+        height: 50px;
+    }
+    .move-btn {
+        border: 3px solid white;
+        background-color: transparent;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .demo-result {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-top: 50px;
+    }
+    .demo-scores {
+        margin-top: 60px;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    .reset {
+        background-color: white;
+        border: none;
+        font-size: 1.2rem;
+        padding: 8px 15px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .same{
+        display: inline-block;
+    }
+    @media(max-width:827px) {
+       .box2{
+        display: flex;
+        flex-direction: column;
+       }
+       .move-btn{
+        margin-top: 4px;
+       }
+    }
+    @media (max-width:576px) {
+       .title,.demo-result,.demo-scores{
+        font-size: 1.2rem;
+       }
+    }
+
+    @media(max-width:477) {
+        .moves{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
